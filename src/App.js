@@ -7,8 +7,7 @@ import React, { useState } from 'react'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
     })
     setTimeout(() => {
       setAlert(null)
-    }, 1500);
+    }, 1000);
   }
 
   function toggleMode() {
@@ -45,7 +44,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar title="TextUtils" about="About Us" mode={mode} toggleMode={toggleMode} />
+        <Navbar title="Play-Text" about="About Us" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
           <Switch>
