@@ -1,9 +1,9 @@
 import React from 'react'
 
 export default function Alert(props) {
-    function capitalize(word){
+    function capitalize(word){       // word = success
         let lower = word.toLowerCase();
-        return lower.charAt(0).toUpperCase() + lower.slice(1);
+        return lower.charAt(0).toUpperCase() + lower.slice(1);  // Success
     }
     return (
 

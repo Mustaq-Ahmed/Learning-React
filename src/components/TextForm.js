@@ -37,7 +37,7 @@ export default function TextForm(props) {
     function handleCapitalize(){
         let arr = [];
         let words = text.split(" ");
-        for(let word of words){
+        for(let word of words){ 
             let lower = word.toLowerCase();
             arr.push(lower.charAt(0).toUpperCase() + lower.slice(1));
         }
